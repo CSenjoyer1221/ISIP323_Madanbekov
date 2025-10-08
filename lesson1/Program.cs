@@ -109,15 +109,4 @@ public class Library
             Console.WriteLine(book);
         }
     }
-
-    public void FindMostExpensiveAndCheapestBooks()
-    {
-        if (!books.Any())
-        {
-            Console.WriteLine("\nВ библиотеке нет книг.");
-            return;
-        }
-        var mostExpensive = books.MaxBy(b => b.Price);
-        DisplaySearchResults
-    }
 }
